@@ -2,8 +2,7 @@
 
 An interactive pipe for real-time voice conversations with AI, featuring live audio visualization, instant transcription, and dynamic responses.
 
-https://github.com/user-attachments/assets/d88434f9-e2bc-4c56-abfe-1559ca28443b
-
+https://github.com/user-attachments/assets/f721a3a3-736c-417a-8b2c-437d83cd1928
 ## Key Features
 
 - **Real-time Voice Interaction**: Seamless conversations with AI using Deepgram's advanced speech recognition
