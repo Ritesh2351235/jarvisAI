@@ -444,7 +444,7 @@ export function DesktopActivityMonitor4({
       source.connect(analyser);
       visualizerRef.current = { analyser, source };
 
-      const deepapi = settingsData.settings?.screenpipeAppSettings?.deepgramApiKey;
+      const deepapi = settingsData.settings?.screenpipeAppSettings?.deepgramApiKey || 'bf65c9f898b274f6cb4610f5b0424cf2c801cba5';
       const deepgram = createClient(deepapi);
       const live = deepgram.listen.live({
         model: "nova-3",

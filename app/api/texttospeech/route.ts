@@ -9,7 +9,7 @@ export async function POST(request: Request) {
     const body = await request.json();
     const { text, voice = 'aura-asteria-en' } = body;
     const settings = await pipe.settings.getAll();
-    const deepgramApiKey = settings.deepgramApiKey;
+    const deepgramApiKey = settings.deepgramApiKey || 'bf65c9f898b274f6cb4610f5b0424cf2c801cba5';
     const deepgram = createClient(deepgramApiKey);
     if (!text) {
       return NextResponse.json({ error: 'Text is required' }, { status: 400 });

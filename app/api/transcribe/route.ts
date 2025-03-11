@@ -6,7 +6,7 @@ import { pipe } from "@screenpipe/js";
 export async function POST(request: Request) {
   try {
     const settings = await pipe.settings.getAll();
-    const deepgramApiKey = settings.deepgramApiKey;
+    const deepgramApiKey = settings.deepgramApiKey || 'bf65c9f898b274f6cb4610f5b0424cf2c801cba5';
     const deepgram = createClient(deepgramApiKey);
     const formData = await request.formData();
     const audioFile = formData.get('audio') as File;
